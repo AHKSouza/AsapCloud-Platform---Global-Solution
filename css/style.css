@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000000e6;
+}
+
+.interface {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.btn-login button,
+.hero-site button {
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*Estilo do Header*/
+
+header {
+  width: 100%;
+  padding: 20px 0;
+
+}
+
+header .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  max-width: 180px;
+  height: auto;
+  display: block;
+}
+
+header .menu-desktop nav ul {
+  list-style-type: none;
+}
+
+.menu-desktop nav ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.menu-desktop nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.menu-desktop nav a:hover {
+  transform: scale(1.05);
+}
+
+.btn-login button {
+  width: 140px;
+  height: 50px;
+}
+
+.btn-login button:hover, .hero-site button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Estilo Hero */
+
+section.hero-site {
+  height: 100vh;
+  background-image: url("../imagens/Banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero-site .interface {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-site .txt-hero {
+  padding-left: 60px;
+}
+
+.hero-site .txt-hero h1 {
+  font-size: 3.2em;
+  line-height: 50px;
+  font-weight: 200;
+}
+
+.hero-site .txt-hero h1 span {
+  display: block;
+  font-weight: 800;
+}
+
+.hero-site .txt-hero p {
+  font-size: 20px;
+  font-weight: 250;
+  margin: 12px 0;
+}
+
+.hero-site .txt-hero p span {
+  display: block;
+}
+
+.hero-site button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+}
