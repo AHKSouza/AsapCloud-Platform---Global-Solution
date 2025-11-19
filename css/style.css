@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #000000e6;
+  background-color: #e3e3e3;
 }
 
 .interface {
@@ -29,7 +29,7 @@ body {
 header {
   width: 100%;
   padding: 20px 0;
-
+  background-color: #080808ff;
 }
 
 header .interface {
@@ -69,7 +69,8 @@ header .menu-desktop nav ul {
   height: 50px;
 }
 
-.btn-login button:hover, .hero-site button:hover {
+.btn-login button:hover,
+.hero-site button:hover {
   background-color: #fff;
   color: #000;
 }
@@ -77,7 +78,7 @@ header .menu-desktop nav ul {
 /* Estilo Hero */
 
 section.hero-site {
-  height: 100vh;
+  height: 84vh;
   background-image: url("../imagens/Banner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,7 +93,7 @@ section.hero-site {
 }
 
 .hero-site .txt-hero {
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .hero-site .txt-hero h1 {
@@ -120,4 +121,45 @@ section.hero-site {
   width: 200px;
   height: 60px;
   font-size: 20px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Conteúdo Home */
+
+section.conteudo {
+  padding: 80px 0;
+}
+
+.conteudo .itens-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.conteudo .itens-container .img-itens img {
+  max-width: 700px;
+  border-radius: 10px;
+  transition: transform 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform, box-shadow;
+  display: block;
+}
+
+.conteudo .itens-container .img-itens img:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 16px 30px rgba(3,10,30,0.25), 0 6px 10px rgba(3,10,30,0.12);
+  z-index: 2;
+}
+
+
+.conteudo .itens-container .txt-itens h3 {
+  font-size: 2.8em;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.itens-container .txt-itens h3 span {
+  font-weight: 200;
 }
