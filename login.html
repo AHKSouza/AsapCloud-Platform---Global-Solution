@@ -13,42 +13,113 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
   <title>Login - AsapCloud Platform</title>
+  <style>
+    .hidden { display: none; }
+    .fade-in { animation: fadeIn 0.6s forwards; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="interface">
-      <section class="logo">
-        <a href="index.html">
-          <img src="assets/AsapCloud_resized.png" alt="Logotipo AsapCloud-Platform" />
-        </a>
-      </section>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero-login">
-      <div class="interface">
-        <div class="form-login">
-          <h2>Login</h2>
-          <form action="login.html" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Seu email" required />
-
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" placeholder="Sua senha" required />
-
-            <button type="submit">Entrar</button>
-          </form>
-          <p class="cadastro-link">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
-        </div>
-      </div>
+<header>
+  <div class="interface">
+    <section class="logo">
+      <a href="index.html">
+        <img src="assets/AsapCloud_resized.png" alt="Logotipo AsapCloud-Platform" />
+      </a>
     </section>
-  </main>
+  </div>
+</header>
 
-  <footer>
+<main>
+
+  <section id="loginSection" class="hero-login">
     <div class="interface">
-      <p>&copy; AsapCloud Platform | Todos os direitos reservados</p>
+      <div class="form-login">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Seu email" required />
+
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" placeholder="Sua senha" required />
+
+          <button type="submit">Entrar</button>
+        </form>
+        <p class="cadastro-link">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <section id="provisionSection" class="hidden">
+    <main class="container">
+      <h2>Provisionar EC2</h2>
+      <form id="provisionForm">
+        <label>Nome da Instância<input type="text" name="name" required /></label>
+        <label>Region
+          <select name="region" required>
+            <option value="us-east-1">us-east-1</option>
+            <option value="us-east-2">us-east-2</option>
+            <option value="us-west-2">us-west-2</option>
+          </select>
+        </label>
+        <label>AMI ID<input type="text" name="ami_id" required /></label>
+        <label>Instance Type
+          <select name="instance_type" required>
+            <option>t2.micro</option>
+            <option>t3.micro</option>
+          </select>
+        </label>
+        <label>VPC ID<input type="text" name="vpc_id" placeholder="vpc-..." required /></label>
+        <label>Subnet ID<input type="text" name="subnet_id" placeholder="subnet-..." required /></label>
+        <label>Security Group IDs (comma separated)<input type="text" name="security_group_ids" placeholder="sg-..." required /></label>
+        <label>Key Pair Name<input type="text" name="key_name" /></label>
+        <label>User Data (script)<textarea name="user_data"></textarea></label>
+        <button type="submit" class="btn">Provisionar</button>
+      </form>
+      <div id="result" class="result" aria-live="polite"></div>
+    </main>
+  </section>
+</main>
+
+<footer>
+  <div class="interface">
+    <p>&copy; AsapCloud Platform | Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script>
+
+  const loginForm = document.getElementById('loginForm');
+  const loginSection = document.getElementById('loginSection');
+  const provisionSection = document.getElementById('provisionSection');
+
+  loginForm.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
+
+
+    if(email === 'admin@asapcloud.com' && senha === '123456') {
+      loginSection.classList.add('hidden'); 
+      provisionSection.classList.remove('hidden');
+      provisionSection.classList.add('fade-in'); 
+    } else {
+      alert('Email ou senha incorretos!');
+    }
+  });
+
+
+  const form = document.getElementById('provisionForm');
+  const resultEl = document.getElementById('result');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    resultEl.innerHTML = "<strong>Simulação:</strong> Formulário enviado com sucesso!";
+  });
+</script>
+
 </body>
 </html>

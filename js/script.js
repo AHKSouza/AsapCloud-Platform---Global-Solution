@@ -42,7 +42,7 @@ const msgSucesso = document.querySelector(".msg-sucesso");
 const msgErro = document.querySelector(".msg-erro");
 
 function validarTelefone(valor) {
-  const numeros = valor.replace(/\D/g, "");
+  const numeros = valor.replace(/\D/g, ""); 
   return numeros.length >= 10;
 }
 
