@@ -67,10 +67,14 @@ Copiar código
 
 ## 🚀 Como Rodar Localmente
 
+IMPORTANTE: PARA ACESSAR A TELA DO PROTOTIPO DO PROJETO, COLOQUE: Email: admin@asapcloud.com - Senha: 123456
+
 1. Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/asapcloud-platform.git
 Navegue até a pasta do projeto:
+
+IMPORTANTE: PARA ACESSAR A TELA DO PROTOTIPO DO PROJETO, COLOQUE: Email: admin@asapcloud.com - Senha: 123456
 
 bash
 Copiar código
