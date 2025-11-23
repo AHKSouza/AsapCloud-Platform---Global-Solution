@@ -1,0 +1,561 @@
+@media (max-width: 639px) {
+  /* Botão Mobile */
+  #btn-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    color: #fff;
+    background-color: #00032c;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+    z-index: 2000;
+    margin-right: 0;
+  }
+
+  #btn-mobile:hover {
+    background-color: #000018;
+  }
+
+  /* Menu Mobile */
+  #menu-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background: linear-gradient(to bottom, #00032c, #000018);
+    padding: 150px 15px 0 15px; 
+    gap: 30px;
+    list-style: none;
+    transition: right 0.4s ease-in-out;
+    border-left: 1px solid #ffffff22;
+    z-index: 1000;
+  }
+
+  #menu-list.active {
+    right: 0;
+  }
+
+  #menu-list li a {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+
+  .login-mobile {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .login-btn-mobile {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0066ff;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+  .btn-login {
+    display: none;
+  }
+
+  /* Header */
+  header .interface {
+    max-width: 100%;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+  }
+
+  header .logo img {
+    max-width: 120px;
+  }
+
+  section.hero-site{
+    height: auto;
+    padding: 120px 10px 60px;
+    text-align: left;
+  }
+
+  .hero-site .interface {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hero-site .txt-hero {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .hero-site .txt-hero h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+  }
+
+  .hero-site .txt-hero p {
+    font-size: 1.2em;
+  }
+
+  .hero-site button {
+    width: 150px;
+    height: 45px;
+    font-size: 1em;
+    align-self: flex-start;
+  }
+
+  section.hero-integrantes {
+  height: auto;
+  padding: 80px 10px 40px;
+  text-align: left;
+}
+
+.hero-integrantes .interface {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 0;
+}
+
+.hero-integrantes .txt-hero {
+  width: 100%;
+  padding-left: 0;
+}
+
+.hero-integrantes .txt-hero h1 {
+  font-size: 1.8em;
+  line-height: 1.3em;
+}
+
+.hero-integrantes .txt-hero h3 span {
+  font-size: 2em; 
+  line-height: 1.2em;
+  text-underline-offset: 10px; 
+}
+
+.hero-integrantes .txt-hero p {
+  font-size: 1em; 
+  margin-top: 10px;
+}
+
+  /* Footer */
+  footer {
+    padding: 15px;
+  }
+
+  footer p {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  /* Quem Somos */
+
+.hero-integrantes .txt-hero h1 {
+    font-size: 1.9em;
+}
+
+.hero-integrantes .txt-hero h3 {
+  font-size: 2em;
+}
+
+  .itens-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .itens-container .img-integrantes,
+  .itens-container .img-itens {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .itens-container .img-integrantes img,
+  .itens-container .img-itens img {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto;
+    border-radius: 10px;
+   
+  }
+
+  .itens-container .txt-itens {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    
+  }
+
+  .integrantes-container h2{
+    font-size: 1.9em;
+  }
+  
+
+  .itens-container .txt-itens h3 {
+    font-size: 1.8em; 
+    line-height: 1.3em;
+    margin-bottom: 30px;
+
+  }
+
+  .itens-container .txt-itens h3 span {
+    font-weight: 400;
+  }
+
+  .itens-container .txt-itens p {
+    font-size: 0.99em; 
+    line-height: 1.5em;
+  }
+
+  section.faq {
+    height: auto; 
+    padding: 60px 15px 40px;
+    background-position: center;
+    background-size: 150% auto;
+  }
+
+  .faq .interface {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .faq .txt-hero {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .faq .txt-hero h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+
+  .faq .txt-hero h3 span {
+    font-size: 0.96em;
+    line-height: 1.3em;
+    text-underline-offset: 8px;
+  }
+
+  .faq .txt-hero p {
+    font-size: 0.98em;
+    line-height: 1.5em;
+    margin: 5px 0;
+  }
+
+
+  .hero-faq {
+    padding: 60px 15px 40px;
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  .hero-faq h1 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .hero-faq p {
+    font-size: 0.95em;
+    max-width: 100%;
+    line-height: 1.4em;
+    
+  }
+
+ 
+  .faq-container {
+    padding: 20px 10px;
+    max-width: 100%;
+    
+  }
+
+
+  .faq-item {
+    margin-bottom: 15px;
+  }
+
+  .faq-question {
+    font-size: 1.1em;
+    padding: 15px;
+  }
+
+  .faq-answer {
+    font-size: 0.95em;
+    padding: 15px;
+  }
+
+  .faq-answer ul {
+    padding-left: 15px;
+  }
+
+
+
+  /* Sobre o Projeto */
+
+ section.hero-sobre {
+  height: auto;
+  padding: 80px 20px 40px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-sobre .txt-hero {
+  text-align: left;
+  width: 100%;
+  padding-left: 0;
+}
+
+.hero-sobre .txt-hero h1 {
+  font-size: 3.9em;
+  line-height: 1.5em;
+  margin: 0; 
+}
+
+
+.hero-sobre .txt-hero p {
+  font-size: 0.98em;
+  line-height: 1em;
+  margin: 0; 
+}
+  .beneficios-container h2 {
+    font-size: 2em;
+  }
+
+  .sobre-projeto .interface {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-projeto .txt-hero {
+    text-align: center;
+  }
+
+  .sobre-projeto .txt-hero h1 {
+    font-size: 2.5em;
+  }
+
+  .sobre-projeto .txt-hero p {
+    font-size: 0.95em;
+  }
+
+  .sobre-projeto .img-sobre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.sobre-projeto .img-sobre img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+  .beneficios-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  /* Contato */
+
+  section.hero-faleConosco {
+    height: auto;
+    padding: 80px 20px 40px;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+  }
+
+  .hero-faleConosco .interface {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .hero-faleConosco .txt-hero {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .hero-faleConosco .txt-hero h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  .hero-faleConosco .txt-hero h3 span {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    text-underline-offset: 6px;
+  }
+
+  .hero-faleConosco .txt-hero p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin: 5px 0;
+  }
+
+  .hero-contato {
+    padding: 40px 15px 20px;
+  }
+
+  .hero-contato h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    line-height: 2rem;
+  }
+
+  .hero-contato p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    max-width: 100%;
+    margin: 0 auto 15px;
+  }
+
+  .form-contato {
+    padding: 25px 20px;
+    margin: 25px auto;
+    border-radius: 12px;
+  }
+
+  .form-contato h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    border-bottom-width: 1px;
+  }
+
+  .form-contato label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .form-contato input,
+  .form-contato textarea {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .form-contato textarea {
+    min-height: 100px;
+  }
+
+  .form-contato button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .form-contato .msg-sucesso,
+  .form-contato .msg-erro {
+    font-size: 0.9rem;
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  /* Login */
+
+  .hero-login {
+    min-height: 100vh;
+    padding: 30px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #00032c, #000018);
+  }
+
+  .form-login {
+    padding: 25px 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    color: #00032c;
+  }
+
+  .form-login h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #00032c;
+    display: inline-block;
+  }
+
+  .form-login label {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  .form-login input {
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .form-login input:focus {
+    outline: none;
+    border-color: #00032c;
+    box-shadow: 0 0 6px rgba(0, 51, 204, 0.2);
+  }
+
+  .form-login button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(to right, #00032c, #000018);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .form-login button:hover {
+    background-color: #00032c;
+    transform: translateY(-2px);
+  }
+
+  .cadastro-link {
+    font-size: 0.9rem;
+    margin-top: 12px;
+  }
+
+  .cadastro-link a {
+    font-size: 0.9rem;
+    color: #00032c;
+    text-decoration: underline;
+  }
+
+}

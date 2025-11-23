@@ -1,0 +1,16 @@
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hero-site .txt-hero h1,
+  .hero-integrantes .txt-hero h1,
+  .hero-sobre .txt-hero h1,
+  .hero-faleConosco .txt-hero h1 {
+    font-size: 3.2em;
+  }
+  .txt-itens h3 {
+    font-size: 2.6em;
+  }
+  .conteudo .itens-container,
+  .itens-container {
+    gap: 30px;
+    padding: 30px 35px;
+  }
+}

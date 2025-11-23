@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleXS.css" />
+    <link rel="stylesheet" href="css/styleSM.css" />
+    <link rel="stylesheet" href="css/styleMD.css" />
+    <link rel="stylesheet" href="css/styleLG.css" />
+    <link rel="stylesheet" href="css/styleXL.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+      rel="stylesheet"
+    />
+    <title>Contato - AsapCloud Platform</title>
+  </head>
+  <body>
+    <header>
+      <div class="interface">
+        <section class="logo">
+          <a href="index.html">
+            <img
+              src="assets/AsapCloud_resized.png"
+              alt="Logotipo AsapCloud-Platform"
+            />
+          </a>
+        </section>
+        <section class="menu-desktop">
+          <nav>
+            <span id="btn-mobile" class="material-symbols-outlined">menu</span>
+            <ul id="menu-list">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="integrantes.html">Quem somos</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li class="login-mobile">
+                <a href="login.html" class="login-btn-mobile" target="_blank">Login</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        
+      </div>
+    </header>
+
+    <section class="hero-faleConosco">
+      <div class="interface">
+        <div class="txt-hero">
+          <h1>Fale</h1>
+          <h3><span>Conosco</span></h3>
+          <p>AsapCloud Platform®</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-contato">
+      <div class="interface">
+        <div class="txt-hero">
+          <h1>Entre em Contato</h1>
+          <p>Fale conosco e conheça mais sobre a AsapCloud Platform</p>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="contato">
+        <div class="interface">
+          <div class="form-contato">
+            <h2>Fale Conosco</h2>
+            <form id="formContato" action="#" method="post">
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Seu email"
+                required
+              />
+
+              <label for="telefone">Telefone:</label>
+              <input
+                type="text"
+                id="telefone"
+                name="telefone"
+                placeholder="(99) 99999-9999"
+                required
+              />
+
+              <label for="assunto">Assunto:</label>
+              <input
+                type="text"
+                id="assunto"
+                name="assunto"
+                placeholder="Assunto da mensagem"
+                required
+              />
+
+              <label for="mensagem">Mensagem:</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Escreva sua mensagem"
+                rows="6"
+                required
+              ></textarea>
+
+              <button type="submit">Enviar</button>
+
+              <div class="msg-sucesso">Cadastro realizado com sucesso!</div>
+              <div class="msg-erro">Por favor, insira um telefone válido!</div>
+            </form>
+          </div>
+
+          <div class="mapa">
+            <h2>Nosso Endereço</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.123456789!2d-46.635!3d-23.564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59e2c0d9c9%3A0x123456789abcdef!2sSão%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="interface">
+        <p>&copy; AsapCloud Platform | Todos os direitos reservados</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

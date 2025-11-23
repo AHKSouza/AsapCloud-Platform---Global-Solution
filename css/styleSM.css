@@ -1,0 +1,110 @@
+@media (min-width: 640px) and (max-width: 767px) {
+  /* Header */
+  header .interface {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Menu */
+  #menu-list {
+    display: none; /* Esconde o menu inicialmente */
+    flex-direction: column;
+    gap: 15px;
+    background-color: #00032c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 10;
+  }
+
+  #menu-list.active {
+    display: flex; /* Mostra quando clicado */
+  }
+
+  #btn-mobile {
+    display: block; /* Exibe botão hamburguer */
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Hero */
+  .hero-site .interface,
+  .hero-integrantes .interface,
+  .hero-sobre .interface,
+  .hero-faleConosco .interface {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-site .txt-hero,
+  .hero-integrantes .txt-hero,
+  .hero-sobre .txt-hero,
+  .hero-faleConosco .txt-hero {
+    padding-left: 0;
+  }
+
+  .hero-site .txt-hero h1,
+  .hero-integrantes .txt-hero h1,
+  .hero-sobre .txt-hero h1,
+  .hero-faleConosco .txt-hero h1 {
+    font-size: 2.2em;
+    line-height: 1.2em;
+  }
+
+  .hero-site .txt-hero p,
+  .hero-integrantes .txt-hero p,
+  .hero-sobre .txt-hero p,
+  .hero-faleConosco .txt-hero p {
+    font-size: 18px;
+  }
+
+  .hero-site button,
+  .btn-login button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* Conteúdo e Itens */
+  .conteudo .itens-container,
+  .itens-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .conteudo .itens-container .img-itens img,
+  .img-integrantes img {
+    width: 100%;
+    height: auto;
+  }
+
+  .txt-itens h3 {
+    font-size: 2em;
+  }
+
+  .txt-itens p {
+    font-size: 16px;
+  }
+
+  /* Benefícios */
+  .beneficios-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  /* Forms */
+  .form-contato,
+  .form-login {
+    padding: 25px;
+  }
+}
